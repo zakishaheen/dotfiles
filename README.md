@@ -1,6 +1,6 @@
 slate-bindings
 ==============
-[Slate](https://github.com/jigish/slate) is an integral part of my daily life. These are my slate bindings. 
+[Slate](https://github.com/jigish/slate) is an integral part of my daily life. These are my slate bindings. The setup is roughly based on Christan Mohn's [My Slate Setup](http://vninja.net/osx/slate-setup/)
 
 These bindings assume a remapped [CapsLock key](http://www.tenshu.net/2012/11/using-caps-lock-as-new-modifier-key-in.html).
 
