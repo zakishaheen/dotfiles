@@ -6,3 +6,7 @@ These bindings assume a remapped [CapsLock key](http://www.tenshu.net/2012/11/us
 
 These bindings are meant to be changed or tinkered with based on the apps you use the most.
 
+Usage
+=
+
+Place the .slate file in your home directory. Make sure to keep a backup of your original file. Then from the Slate menu do "Relaunch and Load Config".
