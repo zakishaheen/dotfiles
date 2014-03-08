@@ -1,4 +1,4 @@
-slate-bindings
+my .slate file
 ==============
 [Slate](https://github.com/jigish/slate) is an integral part of my daily life. It a [hacker's window manager](http://thume.ca/howto/2012/11/19/using-slate/). The technology is at its best when it simply fades into background. Slate has nailed it. 
 
