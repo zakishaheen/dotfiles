@@ -3,21 +3,20 @@ my dotfiles file
 
 My primary system is a mid-2011 model Macbook Air currently running OSX 10.9.3. Here I keep the important dotfiles as backup and for others to use. Enjoy. 
 
-Vim
-===
+.vimrc
+======
 
 I am currently using VIM 7.3 with no additional plugins. I like to keep it simple so that I can easily adapt to new systems without too much plugin swocery. 
 
-Zsh
-===
+.zshrc / oh-my-zsh
+======
+Zsh is my default shell with iTerm 2.0. There is no real customisation in it per se, apart from what is being done in .bashrc. I use the git plugin with oh-my-zsh and apart from that fairly standard stuff. Not much customisation so far. 
 
-Zsh is my default shell with iTerm 2.0. 
+.bashrc
+=======
+Stairforward aliases only for bash. 
 
-Oh-my-zsh
-=========
-
-
-Slate
+.slate.js
 =====
 [Slate](https://github.com/jigish/slate) is an integral part of my daily life. It a [hacker's window manager](http://thume.ca/howto/2012/11/19/using-slate/). The technology is at its best when it simply fades into background. Slate has nailed it. 
 
@@ -27,7 +26,4 @@ These bindings assume a remapped [CapsLock key](http://www.tenshu.net/2012/11/us
 
 These bindings are meant to be changed or tinkered with based on the apps you use the most.
 
-Usage
-=
-
-Place the .slate file in your home directory. Make sure to keep a backup of your original file. Then from the Slate menu do "Relaunch and Load Config".
+Place the .slate.js file in your home directory. Make sure to keep a backup of your original file. Then from the Slate menu do "Relaunch and Load Config".
