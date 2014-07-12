@@ -54,12 +54,12 @@ var configs = {
 
 S.configAll(configs);
  
-var SnapOp = ":space," + HYPER;
-
+//WINDOW positioning
 S.bind("left:" + HYPER, S.op("move",leftHalf));
 S.bind("right:" + HYPER, S.op("move", rightHalf));
 S.bind("up:"+ HYPER, S.op("move", fullScreen));
 
+//Application Switching
 S.bind("t:" + HYPER, S.op("focus", {app: "iTerm" }));
 S.bind("d:" + HYPER, S.op("focus", {app: "Messages" }));
 S.bind("s:" + HYPER, S.op("focus", {app: "Skype" }));
@@ -70,12 +70,15 @@ S.bind("b:" + HYPER, S.op("focus", {app: "Safari" }));
 S.bind("g:" + HYPER, S.op("focus", {app: "Google Chrome" }));
 S.bind("c:" + HYPER, S.op("focus", {app: "Calendar" }));
 
+//Focus Switching
 S.bind("]:" + HYPER, S.op("focus", {direction: "right" }));
 S.bind("[:" + HYPER, S.op("focus", {direction: "left" }));
 
+//Core functions
 S.bind("`:" + HYPER, S.op("relaunch"));
 S.bind("tab:" + HYPER, S.op("switch"));
 
+//Multi monitor
 S.bind("right:alt,ctrl", S.op("throw", {screen: 1}));
 S.bind("left:alt,ctrl", S.op("throw", {screen: 0}));
 
