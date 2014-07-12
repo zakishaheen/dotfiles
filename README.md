@@ -1,5 +1,20 @@
-my .slate file
+my dotfiles file
 ==============
+
+My primary system is a mid-2011 model Macbook Air currently running OSX 10.9.3. Here I keep the important dotfiles as backup and for others to use. Enjoy. 
+
+Vim
+===
+
+Zsh
+===
+
+Oh-my-zsh
+=========
+
+
+Slate
+=====
 [Slate](https://github.com/jigish/slate) is an integral part of my daily life. It a [hacker's window manager](http://thume.ca/howto/2012/11/19/using-slate/). The technology is at its best when it simply fades into background. Slate has nailed it. 
 
 These are my slate bindings. The setup is roughly based on Christan Mohn's [My Slate Setup](http://vninja.net/osx/slate-setup/)
