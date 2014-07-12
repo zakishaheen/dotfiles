@@ -6,8 +6,12 @@ My primary system is a mid-2011 model Macbook Air currently running OSX 10.9.3. 
 Vim
 ===
 
+I am currently using VIM 7.3 with no additional plugins. I like to keep it simple so that I can easily adapt to new systems without too much plugin swocery. 
+
 Zsh
 ===
+
+Zsh is my default shell with iTerm 2.0. 
 
 Oh-my-zsh
 =========
