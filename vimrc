@@ -13,4 +13,6 @@ set laststatus=2
 set backspace=2
 syntax on
 
-
+nnoremap <F7> :tabprevious<CR>
+nnoremap <F8> :tabnext<CR>
+nnoremap <C-t> :tabnew<CR>
