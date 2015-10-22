@@ -1,5 +1,4 @@
 # TODO: Specify monitors by resolution
-# TODO: Application bindings - with HYPER
 # TODO: fix terminal sizing on the 3mon setup and 2mon setup
 
 # This is the default .slate file.
@@ -92,6 +91,15 @@ bind down:cmd;alt     focus down
 
 # Application bindings
 #bind b:cmd;alt focus 'Google Chrome'
+bind r:cmd;alt focus 'Calendar'
+bind x:cmd;alt focus 'Xcode'
+bind w:cmd;alt focus 'Wunderlist'
+bind f:cmd;alt focus 'Finder'
+bind g:cmd;alt focus 'Google Chrome'
+bind t:cmd;alt focus 'iTerm'
+bind s:cmd;alt focus 'Sublime Text 2'
+bind u:cmd;alt focus 'Textual IRC Client'
+bind p:cmd;alt focus 'Spotify'
 
 # Window Hints
 bind esc:cmd hint
