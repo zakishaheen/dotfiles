@@ -1,4 +1,9 @@
-# This is .slate file to be placed in ~/.slate
+# TODO: Specify monitors by resolution
+# TODO: Application bindings - with HYPER
+# TODO: fix terminal sizing on the 3mon setup and 2mon setup
+
+# This is the default .slate file.
+# If no ~/.slate file exists this is the file that will be used.
 
 # General Configs
 config defaultToCurrentScreen true
@@ -16,8 +21,6 @@ alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
 alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
 alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
 alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
-
-#TODO: Specify monitors by resolution
 
 # 3 monitor layouts
 layout 3monitor 'Calendar':REPEAT ${full} 0
@@ -74,7 +77,6 @@ bind 1:ctrl;alt;cmd    layout 1monitor
 bind 2:ctrl;alt;cmd    layout 2monitor
 bind 3:ctrl;alt;cmd    layout 3monitor
 
-
 # Move/Resize
 bind up:ctrl;alt;cmd    move 0;0 screenSizeX;screenSizeY	
 
@@ -88,10 +90,8 @@ bind left:cmd;alt     focus left
 bind up:cmd;alt       focus up
 bind down:cmd;alt     focus down
 
-# TODO: Application bindings - with HYPER
+# Application bindings
 #bind b:cmd;alt focus 'Google Chrome'
-
-
 
 # Window Hints
 bind esc:cmd hint
