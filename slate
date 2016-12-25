@@ -17,67 +17,60 @@ alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
 alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
 alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
 alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
+alias tophalf corner top-left resize:screenSizeX;screenSizeY/2
+
+alias horizontalThird1 move screenOriginX;screenOriginY screenSizeX;screenSizeY/3
+alias horizontalThird2 move screenOriginX;screenOriginY+screenSizeY/3 screenSizeX;screenSizeY/3
+alias horizontalThird3 move screenOriginX;screenOriginY+screenSizeY/3+screenSizeY/3 screenSizeX;screenSizeY/3
+
+alias bottomhalf move screenOriginX;screenOriginY+screenSizeY/2 screenSizeX;screenSizeY/2
+
 alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
 alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
 alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
 
-# 3 monitor layouts
-layout 3monitor 'Calendar':REPEAT ${full} 0
-layout 3monitor 'Spotify':REPEAT ${full} 0
-
-layout 3monitor 'Finder':REPEAT ${topleft} 1
-layout 3monitor 'Wunderlist':REPEAT ${topright} 1
-layout 3monitor 'Google Chrome':REPEAT ${full} 1
-layout 3monitor 'Textual IRC Client':REPEAT ${full} 1
-layout 3monitor 'Messages':REPEAT ${topleft} 1
-layout 3monitor 'Sublime Text 2':REPEAT ${full} 1
-layout 3monitor 'Xcode':REPEAT ${full} 1
-layout 3monitor 'Instruments':REPEAT ${full} 1
-
-layout 3monitor 'iTerm':REPEAT ${topright} 2
-layout 3monitor 'Simulator':REPEAT ${topright} 2
-
-
 # 2 monitor layouts
-layout 2monitor 'Calendar':REPEAT ${full} 0
-layout 2monitor 'iTerm':REPEAT ${topright} 0
-layout 2monitor 'Textual IRC Client':REPEAT ${full} 0
+layout 2monitor 'Calendar':REPEAT ${full} 1
+layout 2monitor 'iTerm2':REPEAT ${horizontalThird1} 1
+layout 2monitor 'Textual IRC Client':REPEAT ${horizontalThird2} 1
+layout 2monitor 'Evernote':REPEAT ${horizontalThird3} 1
+layout 2monitor 'iTunes':REPEAT ${horizontalThird3} 1
+layout 2monitor 'Simulator':REPEAT ${topright} 1
 layout 2monitor 'Messages':REPEAT ${topleft} 0
-layout 2monitor 'Spotify':REPEAT ${full} 0
-layout 2monitor 'Simulator':REPEAT ${topright} 0
-
-layout 2monitor 'Finder':REPEAT ${topleft} 1
-layout 2monitor 'Wunderlist':REPEAT ${topright} 1
-layout 2monitor 'Google Chrome':REPEAT ${full} 1
-layout 2monitor 'Sublime Text 2':REPEAT ${full} 1
-layout 2monitor 'Xcode':REPEAT ${full} 1
-layout 2monitor 'Instruments':REPEAT ${full} 1
+layout 2monitor 'Mail':REPEAT ${full} 0
+layout 2monitor 'Finder':REPEAT ${topleft} 0
+layout 2monitor 'Wunderlist':REPEAT ${topright} 0
+layout 2monitor 'Google Chrome':REPEAT ${full} 0
+layout 2monitor 'TextMate':REPEAT ${full} 0
+layout 2monitor 'Xcode':REPEAT ${full} 0
+layout 2monitor 'Instruments':REPEAT ${full} 0
+layout 2monitor 'Google Hangouts':REPEAT ${topright} 1  
 
 # 1 monitor layouts
-layout 1monitor 'Finder':REPEAT ${topleft} 0
-layout 1monitor 'Wunderlist':REPEAT ${topright} 0
 layout 1monitor 'Calendar':REPEAT ${full} 0
-layout 1monitor 'Google Chrome':REPEAT ${full} 0
-layout 1monitor 'iTerm':REPEAT ${topright} 0
+layout 1monitor 'iTerm2':REPEAT ${full} 0
 layout 1monitor 'Textual IRC Client':REPEAT ${full} 0
-layout 1monitor 'Messages':REPEAT ${topleft} 0
-layout 1monitor 'Spotify':REPEAT ${full} 0
-layout 1monitor 'Sublime Text 2':REPEAT ${full} 0
-layout 1monitor 'Xcode':REPEAT ${full} 0
+layout 1monitor 'iTunes':REPEAT ${full} 0
 layout 1monitor 'Simulator':REPEAT ${topright} 0
+layout 1monitor 'Messages':REPEAT ${topleft} 0
+layout 1monitor 'Mail':REPEAT ${full} 0
+layout 1monitor 'Finder':REPEAT ${topleft} 0
+layout 1monitor 'Wunderlist':REPEAT ${full} 0
+layout 1monitor 'Google Chrome':REPEAT ${full} 0
+layout 1monitor 'TextMate':REPEAT ${full} 0
+layout 1monitor 'Evernote':REPEAT ${full} 0
+layout 1monitor 'Xcode':REPEAT ${full} 0
 layout 1monitor 'Instruments':REPEAT ${full} 0
 
 default 1monitor count:1
 default 2monitor count:2
-default 3monitor count:3
 
 # Layout bindings
 bind 1:ctrl;alt;cmd    layout 1monitor
 bind 2:ctrl;alt;cmd    layout 2monitor
-bind 3:ctrl;alt;cmd    layout 3monitor
 
 # Move/Resize
-bind up:ctrl;alt;cmd    move 0;0 screenSizeX;screenSizeY	
+bind up:ctrl;alt;cmd    move 0;0 screenSizeX;screenSizeY
 
 # Throw Bindings
 bind right:ctrl;alt;cmd throw right
@@ -90,16 +83,22 @@ bind up:cmd;alt       focus up
 bind down:cmd;alt     focus down
 
 # Application bindings
-#bind b:cmd;alt focus 'Google Chrome'
-bind r:cmd;alt focus 'Calendar'
-bind x:cmd;alt focus 'Xcode'
-bind w:cmd;alt focus 'Wunderlist'
 bind f:cmd;alt focus 'Finder'
+bind n:cmd;alt focus 'Franz'
+bind w:cmd;alt focus 'Wunderlist'
+bind r:cmd;alt focus 'Calendar'
+bind e:cmd;alt focus 'Evernote'
 bind g:cmd;alt focus 'Google Chrome'
-bind t:cmd;alt focus 'iTerm'
-bind s:cmd;alt focus 'Sublime Text 2'
+bind x:cmd;alt focus 'Xcode'
+bind z:cmd;alt focus 'Simulator'
+bind t:cmd;alt focus 'iTerm2'
+bind s:cmd;alt focus 'TextMate'
 bind u:cmd;alt focus 'Textual IRC Client'
-bind p:cmd;alt focus 'Spotify'
+bind m:cmd;alt focus 'Mail'
+bind i:cmd;alt focus 'iTunes'
+bind o:cmd;alt focus 'Microsoft OneNote'
+bind d:cmd;alt focus 'Reeder'
+
 
 # Window Hints
 bind esc:cmd hint
