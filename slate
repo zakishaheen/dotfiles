@@ -85,7 +85,7 @@ bind down:cmd;alt     focus down
 # Application bindings
 bind f:cmd;alt focus 'Finder'
 bind n:cmd;alt focus 'Franz'
-bind w:cmd;alt focus 'Wunderlist'
+bind w:cmd;alt focus 'Things' # Used to be 'wunderlist' and before that 'evernote'
 bind r:cmd;alt focus 'Calendar'
 bind e:cmd;alt focus 'Evernote'
 bind g:cmd;alt focus 'Google Chrome'
