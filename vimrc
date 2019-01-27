@@ -1,18 +1,22 @@
 set nocompatible
 set modeline
-
-filetype plugin indent on
-
-set visualbell t_vb=
 set number
 set hlsearch
 set incsearch
 set hidden
+set cursorline
 set ts=2 sts=2 sw=2 expandtab
 set laststatus=2
 set backspace=2
 syntax on
+syntax enable
 
-nnoremap <F7> :tabprevious<CR>
-nnoremap <F8> :tabnext<CR>
-nnoremap <C-t> :tabnew<CR>
+highlight CursorLine ctermbg=Blue ctermfg=White cterm=none
+highlight Cursor ctermbg=Yellow ctermfg=Black cterm=none
+
+nnoremap tn :tabnew<Space>
+nnoremap tk :tabnext
+nnoremap tj :tabprev<CR>
+nnoremap th :tabfirst<CR>
+nnoremap tl :tablast<CR>
+nnoremap tc: tabclose<CR>
